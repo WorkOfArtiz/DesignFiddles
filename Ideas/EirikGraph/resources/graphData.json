@@ -1,0 +1,37 @@
+{
+    "nodes": [
+        {
+            "id": "leader",
+            "label": "leaderNode",
+            "x": 100,
+            "y": 100,
+            "size": 5
+        },
+        {
+            "id": "associate0",
+            "label": "Fidel Castro",
+            "x": 1,
+            "y": 1,
+            "size": 2
+        },
+        {
+            "id": "associate1",
+            "label": "Pope",
+            "x": -1,
+            "y": 0,
+            "size": 1
+        }
+    ],
+    "edges": [
+        {
+            "id": "e0",
+            "source": "leader",
+            "target": "associate0"
+        },
+        {
+            "id": "e1",
+            "source": "leader",
+            "target": "associate1"
+        }
+    ]
+}

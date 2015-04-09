@@ -1,0 +1,28 @@
+{
+    "defaultSettings":{
+        "graphDef":{
+            "proColor": "#40F54C",
+            "proHighlight": "#66FA70",
+            "proLabel": "Support",
+
+            "neutralColor": "#46BFBD",
+            "neutralHighlight": "#5AD3D1",
+            "neutralLabel": "Neutral",
+
+            "againstColor": "#F7464A",
+            "againstHighlight": "#FF5A5E",
+            "againstLabel": "Against"
+        }
+    },
+    "stances":{
+        "things": [
+            {
+                "graphData":{
+                    "pro":30,
+                    "neutral":20,
+                    "against":50
+                }
+            }
+        ]
+    }
+}

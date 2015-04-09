@@ -1,0 +1,38 @@
+<html>
+<head>
+    <!-- jQuery script -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- sigma, graph theory stuff -->
+    <script src="sigma/sigma.min.js"></script>
+    <script src="sigma/plugins/sigma.parsers.json.min.js"></script>
+    <script src="sigma/plugins/sigma.plugins.animate.min.js"></script>
+
+    <!-- Charts.js for beautiful charts -->
+    <script src="charts/Chart.min.js"></script>
+
+    <!-- own script and styles -->
+    <script src="resources/scripts.js"></script>
+    <link href="resources/styles.css" rel="stylesheet">
+
+
+    <title>Politics ?</title>
+</head>
+<body>
+    <div id="container">
+        <section class="title">
+            <h1>Some leader/some idea</h1>
+        </section>
+        <section class="even">
+            <h2>Connections</h2>
+            <div id="graphContainer"></div>
+        </section>
+        <section class="odd">
+            <h2>Popularity</h2>
+
+            <div id="stances" class="carousel">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

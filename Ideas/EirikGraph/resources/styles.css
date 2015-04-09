@@ -1,0 +1,114 @@
+/* Global css */
+
+body {
+    background: #eee;
+}
+
+h1,h2,h3 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid #ec5148;
+}
+
+h2 {
+    border-bottom: 1px solid #222;
+}
+
+section {
+    padding: 1em;
+    background: #fff;
+}
+
+section.odd {
+    background: #eee;
+}
+
+
+#container {
+    width: 1170px;
+    height: auto;
+    margin: auto;
+    padding:2em;
+
+    background: #fff;
+}
+
+@media (max-width: 1300px){
+    #container{
+        width:90%;
+    }
+}
+
+.centered {
+    margin: 0 auto;
+    text-align: left;
+}
+
+/** title **/
+.title {
+    background: #eee;
+}
+
+.title h1{
+    font-family: 'Bitter',"Georgia", "Times New Roman", serif;
+    font-size: 200%;
+    border: none;
+    font-style: italic;
+}
+
+/** graph thingie **/
+
+#graphContainer{
+    width: 100%;
+    height: 500px;
+}
+
+/* stances */
+.stance {
+    margin: 0;
+    padding: 0;
+    height:auto;
+}
+
+.stance h3{
+    padding:1em;
+    background: rgba(0,0,0,0.2);
+}
+.contents{
+    overflow: auto;
+    width:100%;
+}
+
+.contents .textContainer {
+    margin-left: 5%;
+    width:65%;
+    background: rgba(0,0,0,0.5);
+    float:left;
+
+    color:#fff;
+}
+
+.contents .textContainer h3{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.contents .textContainer p{
+    padding: 0.2em 1em 3em 1em;
+    font-family: verdana,sans-serif;
+}
+
+.contents .chartContainer {
+    width:30%;
+    float:left;
+}
+
+.chart{
+    display: table-cell;
+    vertical-align: middle;
+}

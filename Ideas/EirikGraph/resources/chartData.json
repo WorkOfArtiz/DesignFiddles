@@ -1,0 +1,23 @@
+[
+    {
+        "title":"On things",
+        "textTitle":"America and things",
+        "textContent":"As everyone knows by now, america doesnt like things, you can see this reflected in the bar to the right, a lot of people dont like his stance on things. However even more are neutral to it.",
+        "chartData":{
+            "pro": 10,
+            "neutral": 20,
+            "against": 70
+        }
+    }
+    ,
+    {
+        "title":"On serious things",
+        "textTitle":"America and serious",
+        "textContent":"no.",
+        "chartData":{
+            "pro": 95,
+            "neutral": 2,
+            "against": 3
+        }
+    }
+]
