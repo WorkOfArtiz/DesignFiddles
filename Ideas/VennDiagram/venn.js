@@ -94,6 +94,7 @@ function VennDiagram(ctx, width, height){
     
     function Circle(canvD, nodeNr, nodesTotal, colour){
         this.self   = {x: null, y: null,r:canvD.radius};
+        this.canvD  = canvD;
         this.angle  = {base: nodeNr / nodesTotal * 2 * Math.PI, added:0, interval: 0.01};
         this.diff   = {x: null, y: null};
         this.nodeID = String.fromCharCode(65 + (nodeNr%nodesTotal));
@@ -146,8 +147,8 @@ function VennDiagram(ctx, width, height){
         this.text = circle1.nodeID + circle2.nodeID;
 
         this.calc = function(){
-            this.coords.x = (circle1.label.coor.x + circle2.label.coor.x)/2;
-            this.coords.y = (circle1.label.coor.y + circle2.label.coor.y)/2;
+            this.coords.x = ((circle1.canvD.center.x+circle1.diff.x*1.3) + (circle2.canvD.center.x+circle2.diff.x*1.3))/2;
+            this.coords.y = ((circle1.canvD.center.y-circle1.diff.y*1.3) + (circle2.canvD.center.y-circle2.diff.y*1.3))/2;
         };
         
         this.draw = function(ctx){
