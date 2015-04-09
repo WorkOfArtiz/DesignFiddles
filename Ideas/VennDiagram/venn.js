@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", createVenn);
+var diagram;
 
 function createVenn(){
     var canvas = document.getElementById("venn-diagram");
@@ -6,7 +7,7 @@ function createVenn(){
     canvas.width  = canvas.clientWidth;
     var ctx = canvas.getContext("2d");
     
-    var diagram = new VennDiagram(ctx, canvas.width, canvas.height);
+    diagram = new VennDiagram(ctx, canvas.width, canvas.height);
 
     
     /*******************************************\
@@ -132,10 +133,10 @@ function VennDiagram(ctx, width, height){
             ctx.font = "20px 'Source Sans Pro'";
             var width = Math.floor(ctx.measureText(text).width);
 
-            ctx.fillStyle = "rgba(0,0,0,0.3)";
-            ctx.fillRect(this.coords.x - (width / 2 + 10) , this.coords.y - 15,width+20,40);
+            //ctx.fillStyle = "rgba(0,0,0,0.3)";
+            //ctx.fillRect(this.coords.x - (width / 2 + 10) , this.coords.y - 15,width+20,40);
 
-            ctx.fillStyle = "#fff";
+            ctx.fillStyle = "#000";
             ctx.fillText(text, this.coords.x - width / 2, this.coords.y + 10 );
         }
     }
@@ -152,11 +153,11 @@ function VennDiagram(ctx, width, height){
         this.draw = function(ctx){
             this.calc();
             
-            ctx.font = "20px 'Source Sans Pro'";
-            var width = Math.floor(ctx.measureText(this.text).width);
+            //ctx.font = "20px 'Source Sans Pro'";
+            //var width = Math.floor(ctx.measureText(this.text).width);
             
-            ctx.fillStyle = "#fff";
-            ctx.fillText(this.text, this.coords.x - width / 2, this.coords.y + 10 );
+            ctx.fillStyle = "#000";
+            ctx.fillText(this.text, this.coords.x, this.coords.y + 10 );
         }
     }
 }
